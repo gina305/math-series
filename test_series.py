@@ -1,4 +1,3 @@
-def fibonacci():
-    print('testing')
+from series import fibonacci
 
-fibonacci()
+fibonacci(3)
