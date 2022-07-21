@@ -42,10 +42,24 @@ def fibonacci(n):
     lucas(n)
 
 
-def sum_series(n, value2 = 0, value1 = 1):
+def sum_series(n, value1 = 0, value2 = 2):
+    '''return the nth value in the custom series. '''
+    fib = [value1,value2]
 
-        # Use the functions
-        lucas(n)
-        fibonacci(n)
+    # In your series.py module, add a new function lucas that returns the nth value in the lucas numbers
 
-sum_series(5)
+    # Loop until you find nth position
+    while len(fib) < n:
+        a = fib[0]
+        b = fib[1]
+        # Fibonacci
+        sum = fib[-2] + fib[-1]
+
+        # Append to the fib list
+        fib.append(sum)
+
+    # If it is the first or second items in the lisprev)}')
+    print('fib', fib)
+    return sum
+    lucas(n)
+
